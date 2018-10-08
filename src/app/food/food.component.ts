@@ -11,14 +11,8 @@ export class FoodComponent implements OnInit {
 
   foods: Food[];
 
-  selectedFood: Food;
-
-  onSelect(food: Food): void{
-    this.selectedFood = food;
-  }
-
   getFoods(): void{
-    this.foodService.getHeroes()
+    this.foodService.getFoods()
       .subscribe(foods => this.foods = foods);
   }
 

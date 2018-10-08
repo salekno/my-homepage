@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getFoods(): void{
-    this.foodService.getHeroes()
+    this.foodService.getFoods()
       .subscribe(foods => this.foods = foods.slice(1,5));
   }
 
