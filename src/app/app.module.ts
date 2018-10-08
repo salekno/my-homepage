@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FoodComponent } from './food/food.component';
 import { FoodDetailComponent } from './food-detail/food-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -13,11 +15,13 @@ import { MessagesComponent } from './messages/messages.component';
     AppComponent,
     FoodComponent,
     FoodDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
